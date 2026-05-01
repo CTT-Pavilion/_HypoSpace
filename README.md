@@ -314,7 +314,7 @@ If you use HypoSpace in your research, please cite:
 ```bibtex
 @article{chen2025hypospace,
   title={HypoSpace: Evaluating LLM Creativity as Set-Valued Hypothesis Generators under Underdetermination},
-  author={Chen, Tingting and Lin, Beibei and Yuan, Zifeng and Zou, Qiran and He, Hongyu and Ong, Anirudh and Liu, Yew-Soon and Goyal, Dianbo},
+  author={Chen, Tingting and Lin, Beibei and Yuan, Zifeng and Zou, Qiran and He, Hongyu and Goyal, Anirudh and Ong, Yew-Soon and Liu, Dianbo},
   journal={arXiv preprint arXiv:2510.15614},
   year={2025}
 }
