@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🔬 HypoSpace
-
+[Accepted as an ICML 2026 spotlight paper 🎉]
 ### *Evaluating LLM Creativity as Set-Valued Hypothesis Generators under Underdetermination*
 
 [![Paper](https://img.shields.io/badge/📄_Paper-arXiv-b31b1b.svg)](https://arxiv.org/abs/2510.15614)
