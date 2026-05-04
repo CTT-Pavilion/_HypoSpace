@@ -319,7 +319,7 @@ If you use HypoSpace in your research, please cite:
   year={2025}
 }
 ```
-
+ 
 ---
 
 ## 📄 License
