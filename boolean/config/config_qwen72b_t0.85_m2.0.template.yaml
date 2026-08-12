@@ -1,0 +1,14 @@
+llm:
+  type: openrouter
+  models:
+    openrouter: "qwen/qwen-2.5-72b-instruct"
+  api_keys:
+    openrouter: "__OPENROUTER_API_KEY__"   # ← 写真实 OpenRouter Key
+  temperature: 0.85
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}_t0.85_m2.0.json"
+
+
+

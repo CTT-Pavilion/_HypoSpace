@@ -1,11 +1,11 @@
 llm:
   type: openrouter
   models:
-    openrouter: "openai/gpt-4o"
+    openrouter: "qwen/qwen-2.5-72b-instruct"
     openai: Null
     anthropic: Null
   api_keys:
-    openrouter: ""
+    openrouter: "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"
     openai: ""
     anthropic: ""
   temperature: 0.7

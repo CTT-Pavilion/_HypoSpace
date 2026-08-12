@@ -1,0 +1,4 @@
+.DS_Store
+boolean/checkpoints/
+boolean/config/*.local.yaml
+*.log

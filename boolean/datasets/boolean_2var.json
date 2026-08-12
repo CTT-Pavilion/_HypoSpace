@@ -1,0 +1,3543 @@
+{
+  "metadata": {
+    "variables": [
+      "x",
+      "y"
+    ],
+    "operators": [
+      "AND",
+      "OR"
+    ],
+    "max_depth": 2,
+    "hypothesis_space_size": 10,
+    "semantic_unique_count": 4,
+    "mechanistic_opts": {
+      "apply_commutativity": true,
+      "apply_idempotence_and_or": true,
+      "flatten_associativity": true
+    },
+    "total_observation_sets": 35
+  },
+  "datasets_by_n_observations": {
+    "1": [
+      {
+        "observation_set_id": "n1_inputs_00_outputs_0",
+        "n_observations": 1,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 10,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n1_inputs_01_outputs_0",
+        "n_observations": 1,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n1_inputs_01_outputs_1",
+        "n_observations": 1,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n1_inputs_10_outputs_0",
+        "n_observations": 1,
+        "observation_inputs": [
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n1_inputs_10_outputs_1",
+        "n_observations": 1,
+        "observation_inputs": [
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n1_inputs_11_outputs_1",
+        "n_observations": 1,
+        "observation_inputs": [
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 10,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      }
+    ],
+    "2": [
+      {
+        "observation_set_id": "n2_inputs_00_01_outputs_00",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_00_01_outputs_01",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_00_10_outputs_00",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_00_10_outputs_01",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_00_11_outputs_01",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 10,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_01_10_outputs_00",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_01_10_outputs_01",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_01_10_outputs_10",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          1,
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_01_10_outputs_11",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_01_11_outputs_01",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_01_11_outputs_11",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_10_11_outputs_01",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n2_inputs_10_11_outputs_11",
+        "n_observations": 2,
+        "observation_inputs": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      }
+    ],
+    "3": [
+      {
+        "observation_set_id": "n3_inputs_00_01_10_outputs_000",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0,
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_00_01_10_outputs_001",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_00_01_10_outputs_010",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1,
+          0
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_00_01_10_outputs_011",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_00_01_11_outputs_001",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_00_01_11_outputs_011",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_00_10_11_outputs_001",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_00_10_11_outputs_011",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 5,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_01_10_11_outputs_001",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_01_10_11_outputs_011",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_01_10_11_outputs_101",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          1,
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n3_inputs_01_10_11_outputs_111",
+        "n_observations": 3,
+        "observation_inputs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          1,
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      }
+    ],
+    "4": [
+      {
+        "observation_set_id": "n4_inputs_00_01_10_11_outputs_0001",
+        "n_observations": 4,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  AND  y",
+            "canonical_form": "x & y",
+            "mechanistic_key": "('AND', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  y  AND  (x  OR  y)",
+            "canonical_form": "x & y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n4_inputs_00_01_10_11_outputs_0011",
+        "n_observations": 4,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 0,
+            "string": "(x=0, y=1) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x",
+            "canonical_form": "x",
+            "mechanistic_key": "('VAR', 'x')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  AND  (x  OR  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  (x  AND  y)",
+            "canonical_form": "x & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 0,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n4_inputs_00_01_10_11_outputs_0101",
+        "n_observations": 4,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=1, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "y",
+            "canonical_form": "y",
+            "mechanistic_key": "('VAR', 'y')",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  AND  (x  OR  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('AND', (('OR', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "y  OR  (x  AND  y)",
+            "canonical_form": "y & (x | y)",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 0,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 3,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      },
+      {
+        "observation_set_id": "n4_inputs_00_01_10_11_outputs_0111",
+        "n_observations": 4,
+        "observation_inputs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_outputs": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "observations": [
+          {
+            "inputs": {
+              "x": 0,
+              "y": 0
+            },
+            "output": 0,
+            "string": "(x=0, y=0) -> 0"
+          },
+          {
+            "inputs": {
+              "x": 0,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=0, y=1) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 0
+            },
+            "output": 1,
+            "string": "(x=1, y=0) -> 1"
+          },
+          {
+            "inputs": {
+              "x": 1,
+              "y": 1
+            },
+            "output": 1,
+            "string": "(x=1, y=1) -> 1"
+          }
+        ],
+        "ground_truth_expressions": [
+          {
+            "formula": "x  OR  y",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          },
+          {
+            "formula": "x  OR  y  OR  (x  AND  y)",
+            "canonical_form": "x | y",
+            "mechanistic_key": "('OR', (('AND', (('VAR', 'x'), ('VAR', 'y'))), ('VAR', 'x'), ('VAR', 'y')))",
+            "truth_table": {
+              "(0, 0)": 0,
+              "(0, 1)": 1,
+              "(1, 0)": 1,
+              "(1, 1)": 1
+            }
+          }
+        ],
+        "n_compatible_expressions": 2,
+        "variables": [
+          "x",
+          "y"
+        ],
+        "operators": [
+          "AND",
+          "OR"
+        ],
+        "max_depth": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,5009 @@
+{
+  "metadata": {
+    "nodes": [
+      "A",
+      "B",
+      "C"
+    ],
+    "max_n_observations": 3,
+    "max_edges": null,
+    "hypothesis_space_size": 25,
+    "total_observation_sets": 61
+  },
+  "datasets_by_n_observations": {
+    "1": [
+      {
+        "observation_set_id": "n1_001",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": []
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 12,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_002",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_003",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_004",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 5,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_005",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": []
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 12,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_006",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_007",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_008",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 5,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_009",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": []
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 12,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_010",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_011",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n1_012",
+        "n_observations": 1,
+        "observations": [
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 5,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      }
+    ],
+    "2": [
+      {
+        "observation_set_id": "n2_001",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": []
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_002",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_003",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_004",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 3,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_005",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": []
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_006",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_007",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_008",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 3,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_009",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_010",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_011",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_012",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_013",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_014",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_015",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_016",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_017",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 3,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_018",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_019",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 3,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_020",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_021",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": []
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_022",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_023",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_024",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 3,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_025",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 4,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_026",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_027",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_028",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_029",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 3,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n2_030",
+        "n_observations": 2,
+        "observations": [
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      }
+    ],
+    "3": [
+      {
+        "observation_set_id": "n3_001",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": []
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_002",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_003",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_004",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_005",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_006",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_007",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_008",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_009",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_010",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_011",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_012",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_013",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 1,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:1 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_014",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_015",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_016",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:0"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 1,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:1 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_017",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 1,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_018",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:0"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:1 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      },
+      {
+        "observation_set_id": "n3_019",
+        "n_observations": 3,
+        "observations": [
+          {
+            "perturbed_node": "A",
+            "effects": {
+              "A": 0,
+              "B": 1,
+              "C": 1
+            },
+            "string": "Perturb(A) -> A:0 B:1 C:1"
+          },
+          {
+            "perturbed_node": "B",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 1
+            },
+            "string": "Perturb(B) -> A:0 B:0 C:1"
+          },
+          {
+            "perturbed_node": "C",
+            "effects": {
+              "A": 0,
+              "B": 0,
+              "C": 0
+            },
+            "string": "Perturb(C) -> A:0 B:0 C:0"
+          }
+        ],
+        "ground_truth_graphs": [
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ],
+        "n_compatible_graphs": 2,
+        "nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "max_edges": 3
+      }
+    ]
+  }
+}
